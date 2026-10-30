@@ -26,8 +26,9 @@
 [터미널_조작_로그_기록.md](터미널_조작_로그_기록.md)
 
 - [] Docker 설치/점검
-```PowerShell
-```
+
+[Docker_설치_및_점검.md](Docker_설치_및_점검.md)
+
 - [] hello-world 실행
 - [] Dockerfile 빌드/실행
 - [] 포트 매핑 접속(2회)

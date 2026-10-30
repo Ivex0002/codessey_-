@@ -10,8 +10,7 @@
 ## 1) 실행 환경
 |OS|쉘|Docker 버전|Git 버전|
 | --- | --- | --- | --- |
-|window11pro, 26H2|PowerShell|||
-|||||
+|window11pro, 26H2|PowerShell|29.9.2||
 
 // 붙여넣기용
 ```PowerShell

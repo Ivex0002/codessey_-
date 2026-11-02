@@ -10,7 +10,7 @@
 ## 1) 실행 환경
 |OS|쉘|Docker 버전|Git 버전|
 | --- | --- | --- | --- |
-|window11pro, 26H2|PowerShell|29.9.2||
+|window11pro, 26H2|PowerShell|29.9.2|2.56.0.windows.4|
 
 ## 2) 수행 체크리스트
 - [x] 터미널 기본 조작 및 폴더 구성

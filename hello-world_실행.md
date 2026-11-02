@@ -79,7 +79,7 @@ CONTAINER ID   IMAGE     COMMAND            CREATED         STATUS         PORTS
 
 - 실험 2 : docker attach
 - 비고 : 본래 attach 상태에서 컨테이너를 종료하지 않고 빠져나오려면 기본적으로 `Ctrl + P`, `Ctrl + Q`를 사용하나,
-노트북 환경에서 해당 커맨드가 먹지 않는 문제가 발생하여 ctrl+c로 강제 종료 처리함 
+노트북 환경에서 해당 커맨드가 먹지 않는 문제가 발생하여 `Ctrl + C`로 강제 종료 처리함 
 ```
 PS C:\Users\User> docker attach my-ubuntu
 

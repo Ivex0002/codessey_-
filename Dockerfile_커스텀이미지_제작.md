@@ -1,7 +1,24 @@
-### Dockerfile 기반 커스텀 이미지 제작
+# Dockerfile 기반 커스텀 이미지 제작
 [도커파일 미니 프로젝트](mission1_miniproject_docker/)
 
-- 빌드 로그
+### 1) 선택한 베이스 이미지
+- 베이스 이미지: `ubuntu:latest`
+- 선택 이유:
+  - 리눅스 환경을 직접 구성해 볼 수 있음
+  - 패키지 설치, 환경변수, 사용자 생성 등을 실습하기 좋음
+ 
+### 2) 적용한 커스텀 포인트
+
+| 커스텀 포인트 | 목적 |
+|---|---|
+| `ENV APP_NAME=mission1_miniproject_docker` | 환경변수 사용 연습 |
+| `WORKDIR /app` | 작업 경로 고정 |
+| `COPY app.sh /app/app.sh` | 실행 파일 포함 |
+| `RUN apt-get install -y curl` | 패키지 설치 실습 |
+| `RUN chmod +x /app/app.sh` | 실행 권한 부여 |
+| `CMD ["/app/app.sh"]` | 시작 명령 지정 |
+
+## 빌드 로그
 ```
 PS C:\Users\User\Documents\mission1_miniproject_docker> docker build -t my-ubuntu-app .
 [+] Building 20.0s (9/9) FINISHED                                                                  docker:desktop-linux
@@ -29,7 +46,7 @@ PS C:\Users\User\Documents\mission1_miniproject_docker> docker build -t my-ubunt
  => => unpacking to docker.io/library/my-ubuntu-app:latest 
 ```
 
-- 실행 로그
+## 실행 로그
 ```
 PS C:\Users\User\Documents\mission1_miniproject_docker> docker run -d --name my-app my-ubuntu-app
 fe33ca984ee78a6d3c66a404e168df64e4c80314518bbab494a255d71a1ac05c
@@ -56,7 +73,7 @@ Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns lda
 Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd
 ```
 
-- 종료 및 컨테이너 정리
+## 종료 및 컨테이너 정리
 ```
 appuser@fe33ca984ee7:/app$ exit
 exit

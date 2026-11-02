@@ -28,7 +28,10 @@
 
 [Docker_설치_및_점검.md](Docker_설치_및_점검.md)
 
-- [] hello-world 실행
+- [x] hello-world 실행
+
+[hello-world_실행.md](hello-world_실행.md)
+
 - [] Dockerfile 빌드/실행
 - [] 포트 매핑 접속(2회)
 - [] 바인드 마운트 반영

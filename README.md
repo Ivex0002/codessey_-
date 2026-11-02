@@ -45,7 +45,9 @@
 
 [볼륨_영속성_검증.md](볼륨_영속성_검증.md)
 
-- [] Git 설정 + VSCode GitHub 연동
+- [x] Git 설정 + VSCode GitHub 연동
+
+[Git_설정.md](Git_설정.md)
 
 ## 검증 방법(어떤 명령으로 무엇을 확인했는지) + 결과 위치 링크
 

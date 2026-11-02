@@ -32,8 +32,14 @@
 
 [hello-world_실행.md](hello-world_실행.md)
 
-- [] Dockerfile 빌드/실행
-- [] 포트 매핑 접속(2회)
+- [x] Dockerfile 빌드/실행
+
+[Dockerfile_커스텀이미지_제작.md](Dockerfile_커스텀이미지_제작.md)
+
+- [x] 포트 매핑 접속
+
+[포트매핑_및_접속증거.md](포트매핑_및_접속증거.md)
+
 - [] 바인드 마운트 반영
 - [] 볼륨 영속성
 - [] Git 설정 + VSCode GitHub 연동

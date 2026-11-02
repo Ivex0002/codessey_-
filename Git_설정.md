@@ -89,3 +89,9 @@ branch.main.remote=origin
 branch.main.merge=refs/heads/main
 ```
 - `user.name=garam`, `user.email=garam199803@gmail.com`으로 기입한 설정이 잘 되었음을 확인
+
+```
+PS C:\Users\User\Documents\mission1_miniproject_git> git config --global --list
+fatal: unable to read config file 'C:/Users/User/.gitconfig': No such file or directory
+```
+- 글로벌 설정은 깨끗한 것을 다시 확인
